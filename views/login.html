@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>Libera Di Essere - Login</title>
+</head>
+<body>
+    <main>
+        <div class="login-wrapper">
+            <div class="app-logo">
+                <img src="../assets/images/logo.png" alt="LiberaDiEssere.it logo" draggable="false" class="img-fluid">
+            </div>
+            <h1>Libera Di <mark>Essere</mark></h1>
+            <form id="login" onsubmit="return false;">
+                <input type="text" id="un" name="un" maxlength="20" required placeholder="Username / Email">
+                <input type="password" id="pw" name="pw" maxlength="20" required placeholder="Password">
+                <a href="./home.html" id="send" class="button">ACCEDI</a>
+            </form>
+            <p>
+                Non sei registrato?<br> 
+                <a class="main-link" id="register" href="#">Registrati</a> o Continua come <a class="main-link" id="guest_login" href="./home.html">ospite</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

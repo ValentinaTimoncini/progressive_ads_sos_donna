@@ -1,9 +1,11 @@
 :root{
     --white: #ffffff;
-    --main: rgb(255, 32, 77);
+    --main: #ff204d;
     --bg: #fafafa;
-    --text: #000000;
+    --text: #2B292E;
     --gray: #808080;
+    --svg-yellow: #FFAE03;
+    --svg-orange: #FC5800;
     --pri-font: 'Poppins', sans-serif;
 }
 *,
@@ -34,13 +36,16 @@ img.img-fluid{
 }
 mark{
     background-color: transparent;
-    color: var(--pink);
+    color: var(--main);
 }
 .main-link{
     color: var(--main);
 }
 .main-link:hover{
     text-decoration: underline;
+}
+.bg-color{
+    color: var(--bg);
 }
 /*CUSTOM*/
 body{
