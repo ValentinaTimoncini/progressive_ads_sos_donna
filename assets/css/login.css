@@ -1,0 +1,58 @@
+body{
+    background-color: var(--main);
+}
+.login-wrapper{
+    background-color: var(--bg);
+    padding: 40px 80px;
+    width: 90vw;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(128, 21, 42);
+}
+.app-logo{
+    width: 50%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+input{
+    display: block;
+    font-family: var(--pri-font);
+    border: none;
+    border-bottom: 2px solid var(--gray);
+    border-radius: 0;
+    padding: 7px 0;
+    font-size: 1.1rem;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 2rem;
+    transition: all .2s ease-in;
+    color: var(--gray)
+}
+input:focus{
+    border-color: var(--main);
+    outline: none;
+    color: var(--main);
+}
+#login{
+    padding-top: 45px;
+}
+.button{
+    color: var(--bg);
+    background-color: var(--main);
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all .33s linear;
+    display: block;
+    margin-bottom: 1rem;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+}
+.button:hover{
+    color: var(--main);
+    background-color: var(--bg);
+}
+@media screen and (max-width: 500px) {
+    .login-wrapper{
+        padding: 40px 20px;
+    }
+}

@@ -1,10 +1,10 @@
 :root{
     --white: #ffffff;
-    --main: rgb(255, 122, 145);
-    --bg: rgba(255, 136, 156, 0.2);
-    --bg: #fff8f8;
+    --main: rgb(255, 32, 77);
+    --bg: #fafafa;
     --text: #000000;
     --gray: #808080;
+    --pri-font: 'Poppins', sans-serif;
 }
 *,
 *::before,
@@ -36,10 +36,15 @@ mark{
     background-color: transparent;
     color: var(--pink);
 }
-
+.main-link{
+    color: var(--main);
+}
+.main-link:hover{
+    text-decoration: underline;
+}
 /*CUSTOM*/
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--pri-font);
     background-color: var(--bg);
     text-align: center;
     height: 100vh;
