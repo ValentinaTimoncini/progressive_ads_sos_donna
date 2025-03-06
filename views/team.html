@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>Libera Di Essere - Team</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="position">Località Rilevata: <mark>Italia, Faenza</mark></div>
+        <ul class="navigation">
+            <li><a class="main-link" href="./home.html">Home</a></li>
+            <li><a class="main-link" href="./video.html">Video</a></li>
+            <li><a class="main-link" href="./contatti.html">Contatti</a></li>
+            <li><a class="main-link" href="./crea_video.html">Crea Video</a></li>
+            <li><a class="main-link" href="./team.html">Team</a></li>
+            <li><a class="main-link" href="#" onclick="localStorage.clear();top.location = '/'" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Chi siamo</h1>
+        <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur esse ea reiciendis exercitationem facere sed non molestias neque nam assumenda obcaecati aliquid delectus quaerat natus quo, perspiciatis doloribus a!
+        Aliquam eaque inventore earum dolorum consequuntur libero soluta ad modi a quas, ipsum nisi, voluptates atque nam eveniet minus voluptate pariatur temporibus minima neque sit sequi quae voluptas. Deleniti, voluptate!
+        Nostrum sit dolores nisi animi deleniti laboriosam nulla recusandae iure ipsa molestias! Totam laborum saepe minus ipsa, quaerat, rerum accusantium veniam aliquid quasi inventore libero iste nesciunt corrupti? Nesciunt, architecto!</p>
+        <div class="app-logo">
+        </div>
+    </main>
+    <script>
+        if(!localStorage.getItem("login")){
+            localStorage.setItem("login", 1)
+        }
+    </script>
+</body>
+</html>

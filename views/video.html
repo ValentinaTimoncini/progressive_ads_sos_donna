@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>Libera Di Essere - Video</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="position">Località Rilevata: <mark>Italia, Faenza</mark></div>
+        <ul class="navigation">
+            <li><a class="main-link" href="./home.html">Home</a></li>
+            <li><a class="main-link" href="./video.html">Video</a></li>
+            <li><a class="main-link" href="./contatti.html">Contatti</a></li>
+            <li><a class="main-link" href="./crea_video.html">Crea Video</a></li>
+            <li><a class="main-link" href="./team.html">Team</a></li>
+            <li><a class="main-link" href="#" onclick="localStorage.clear();top.location = '/'" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Pubblicità progressive</h1>
+        
+    </main>
+    <script>
+        if(!localStorage.getItem("login")){
+            localStorage.setItem("login", 1)
+        }
+    </script>
+</body>
+</html>

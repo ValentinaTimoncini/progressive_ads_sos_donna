@@ -1,0 +1,18 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#navbar .navigation{
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+}
+#navbar .navigation a{
+    color: var(--text);
+}
+#navbar #logout{
+    color: var(--main);
+}
