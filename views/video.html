@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
     <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/video.css">
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
     <title>Libera Di Essere - Video</title>
 </head>
@@ -23,12 +24,47 @@
     </nav>
     <main>
         <h1>Pubblicità progressive</h1>
+        <section class="video-section" id="domestic">
+            <h2>Violenza Domestica</h2>
+            <div class="video-wrapper"></div>
+        </section>
+        <section class="video-section" id="rape">
+            <h2>Violenza Sessuale</h2>
+            <div class="video-wrapper"></div>
+        </section>
+        <section class="video-section" id="femminicidio">
+            <h2>Femminicidio</h2>
+            <div class="video-wrapper"></div>
+        </section>
         
     </main>
     <script>
         if(!localStorage.getItem("login")){
             localStorage.setItem("login", 1)
         }
+        fetch('../video.json')
+            .then(response => response.json())
+            .then(data => {
+                data.video.forEach(v=>{
+                    let card = `
+                        <div onclick="top.location = '${v.url}'" class="video">
+                            <img src="${v.thumb}" alt="${v.title}" class="img-fluid">
+                            <h3>${v.title}</h3>
+                        </div>
+                    `
+                    switch(v.cat){
+                        case 'D':
+                            document.querySelector("#domestic .video-wrapper").insertAdjacentHTML("beforeend", card)
+                            break;
+                        case 'R':
+                            document.querySelector("#rape .video-wrapper").insertAdjacentHTML("beforeend", card)
+                            break;
+                        default:
+                            document.querySelector("#femminicidio .video-wrapper").insertAdjacentHTML("beforeend", card)
+                    }
+                })
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
     </script>
 </body>
 </html>

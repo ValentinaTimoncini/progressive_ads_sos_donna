@@ -2,7 +2,66 @@
     "video": [
         {
             "id": 1,
-            "url": "http://youtube.com/jksfhkas/89"
+            "url": "https://youtu.be/iZr8d3SMMlo",
+            "cat": "D",
+            "title": "Women Survivors of Domestic Violence",
+            "thumb": "../assets/images/thumbs/sddefault.jpg"
+        },
+        {
+            "id": 2,
+            "url": "https://youtu.be/ElJxUVJ8blw?si=SsWKdkLXWe3Of19A",
+            "cat": "D",
+            "title": "Jackson Katz: Violence against women—it's a men's issue",
+            "thumb": "../assets/images/thumbs/sddefault1.jpg"
+        },
+        {
+            "id": 3,
+            "url": "https://youtu.be/iZr8d3SMMlo",
+            "cat": "D",
+            "title": "Women Survivors of Domestic Violence",
+            "thumb": "../assets/images/thumbs/sddefault.jpg"
+        },
+        {
+            "id": 4,
+            "url": "https://youtu.be/3qdSmYbgYgA?si=DKB1ZIzUlwtT-uca",
+            "cat": "R",
+            "title": "Perché cresce la violenza sessuale in Italia",
+            "thumb": "../assets/images/thumbs/32.jpg"
+        },
+        {
+            "id": 5,
+            "url": "https://youtu.be/eF17l3cd-7g?si=n8Iq_XgECJzKCupk",
+            "cat": "R",
+            "title": "Violentata in famiglia a 12 anni: \"La mamma segnava i giorni degli stupri sul calendario\"",
+            "thumb": "../assets/images/thumbs/423.jpg"
+        },
+        {
+            "id": 6,
+            "url": "https://youtu.be/FDgYZZflpSk?si=FJVVR22_4oi8UZ6J",
+            "cat": "R",
+            "title": "Violenza sulle donne: Germania inasprisce legge su abusi sessuali",
+            "thumb": "../assets/images/thumbs/7.jpg"
+        },
+        {
+            "id": 8,
+            "url": "https://youtu.be/r9ImYvPPpn4",
+            "cat": "F",
+            "title": "\"Le 48 coltellate a mia figlia\": Vera Squatrito racconta il FEMMINICIDIO di Giordana di Stefano",
+            "thumb": "../assets/images/thumbs/48.jpg"
+        },
+        {
+            "id": 9,
+            "url": "https://youtu.be/H2lQu2yA__4",
+            "cat": "F",
+            "title": "Giulia Tramontano, vittima di femminicidio: la ricostruzione delle ultime ore prima dell'omicidio",
+            "thumb": "../assets/images/thumbs/0.jpg"
+        },
+        {
+            "id": 10,
+            "url": "https://youtu.be/BgTM105E1qc",
+            "cat": "F",
+            "title": "Femminicidio, bozza ddl: ergastolo per chi uccide una donna come atto di discriminazione o odio",
+            "thumb": "../assets/images/thumbs/312313.jpg"
         }
     ]
 }

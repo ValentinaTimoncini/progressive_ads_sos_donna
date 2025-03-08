@@ -1,0 +1,18 @@
+.video-section{
+    margin-bottom: 6rem;
+}
+.video-wrapper{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.video{
+    width: calc(33% - 10px);
+    display: block;
+    color: var(--text);
+    cursor: pointer;
+}
+.video img{
+    object-fit: cover;
+}
