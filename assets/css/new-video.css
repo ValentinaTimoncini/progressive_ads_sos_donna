@@ -51,3 +51,10 @@ label.error.active{
 input[type=file]{
     margin-bottom: 1rem;
 }
+p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+h2{
+    margin-top: 20px;
+}
