@@ -1,0 +1,73 @@
+#valentina{
+    margin: 1rem auto;
+    width: 90vw;
+    max-width: 600px;
+    text-align: center;
+    animation: shake 1s linear 3;
+}
+#valentina .name{
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: 600;
+}
+.img{
+    border: 2px solid var(--text);
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#valentina img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+h2{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    text-align: center;
+    text-wrap: nowrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.person{
+    width: calc(50% - 8px);
+    animation: shake 1s linear 3;
+}
+.person img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.person .name{
+    font-size: 0.9rem;
+}
+.person span{
+    display: block;
+    width: 100%;
+    color: #1c1c1c;
+    font-size: 6rem;
+}
+main{
+    padding-bottom: 100px;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(4px, 4px) rotate(4deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-4px, 4px) rotate(-4deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
