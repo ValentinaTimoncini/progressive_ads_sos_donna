@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
-    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/new-video.css">
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
     <title>Libera Di Essere - Nuovo Video</title>
 </head>
@@ -22,11 +22,42 @@
         </ul>
     </nav>
     <main>
-        <h1>Chi siamo</h1>
-        <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur esse ea reiciendis exercitationem facere sed non molestias neque nam assumenda obcaecati aliquid delectus quaerat natus quo, perspiciatis doloribus a!
-        Aliquam eaque inventore earum dolorum consequuntur libero soluta ad modi a quas, ipsum nisi, voluptates atque nam eveniet minus voluptate pariatur temporibus minima neque sit sequi quae voluptas. Deleniti, voluptate!
-        Nostrum sit dolores nisi animi deleniti laboriosam nulla recusandae iure ipsa molestias! Totam laborum saepe minus ipsa, quaerat, rerum accusantium veniam aliquid quasi inventore libero iste nesciunt corrupti? Nesciunt, architecto!</p>
-        <div class="app-logo">
+        <h1>Crea un nuovo evento</h1>
+        <div id="nuovo_evento">
+            <form novalidate id="new">
+                <label for="video">Video</label>
+                <input type="file" id="video" name="video" accept="video/mp4,video/x-m4v,video/*">
+        
+                <label for="title">Titolo</label>
+                <input type="text" id="title" name="title" maxlength="255">
+                <label for="title" class="error">Inserire un titolo valido</label>
+        
+                <label for="descr">Descrizione</label>
+                <textarea id="descr" name="descr" maxlength="1024"></textarea>
+                <label for="descr" class="error">Descrizione troppo corta</label>
+        
+                <label for="indirizzo">Account</label>
+                <input type="text" id="indirizzo" name="indirizzo" maxlength="255">
+                <label for="indirizzo" class="error">Inserire un indirizzo valido</label>
+        
+                <label for="ticket_price">Nome</label>
+                <input type="text" id="indirizzo" name="indirizzo" maxlength="255">
+                <label for="ticket_price" class="error">Inserire un prezzo valido</label>
+        
+                <label for="crowd_counter">Cognome</label>
+                <input type="text" id="indirizzo" name="indirizzo" maxlength="255">
+                <label for="crowd_counter" class="error">Inserire un numero valido</label>
+        
+                <label for="event_date">Data</label>
+                <input type="date" id="event_date" name="event_date">
+                <label for="event_date" class="error">Inserire una data valida</label>
+        
+                <label for="end_time">Orario</label>
+                <input type="time" id="end_time" name="end_time">
+                <label for="end_time" class="error">Inserire una ora valida</label>
+    
+                <button id="send">CREA</button>
+            </form>
         </div>
     </main>
     <script>
